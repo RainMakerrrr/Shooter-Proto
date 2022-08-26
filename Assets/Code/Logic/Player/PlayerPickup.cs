@@ -33,15 +33,15 @@ namespace Code.Logic.Player
 
         private void OnEquipLeftHand()
         {
-            AttachWeapon(_leftSlot);
+            TryAttachWeapon(_leftSlot);
         }
 
         private void OnEquipRightHand()
         {
-            AttachWeapon(_rightSlot);
+            TryAttachWeapon(_rightSlot);
         }
 
-        private void AttachWeapon(WeaponSlot slot)
+        private void TryAttachWeapon(WeaponSlot slot)
         {
             if (slot.HasWeapon)
             {

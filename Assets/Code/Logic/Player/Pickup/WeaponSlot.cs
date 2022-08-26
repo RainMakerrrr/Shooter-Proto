@@ -1,5 +1,4 @@
-﻿using System;
-using Code.Logic.Weapons;
+﻿using Code.Logic.Weapons;
 using UnityEngine;
 
 namespace Code.Logic.Player.Pickup
@@ -11,26 +10,6 @@ namespace Code.Logic.Player.Pickup
         public BaseWeapon Weapon { get; private set; }
 
         public bool HasWeapon => Weapon != null;
-
-        public void TryAttachWeapon(BaseWeapon weapon)
-        {
-            if (HasWeapon)
-            {
-                if (Weapon == weapon)
-                {
-                    DetachWeapon();
-                }
-                else
-                {
-                    DetachWeapon();
-                    AttachWeapon(weapon);
-                }
-            }
-            else
-            {
-                AttachWeapon(weapon);
-            }
-        }
 
         public void AttachWeapon(BaseWeapon weapon)
         {

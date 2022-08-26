@@ -1,5 +1,4 @@
-﻿using Code.Infrastructure.Services;
-using Code.Infrastructure.Services.Input;
+﻿using Code.Infrastructure.Services.Input;
 using UnityEngine;
 using Zenject;
 
